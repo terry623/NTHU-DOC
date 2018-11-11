@@ -1,0 +1,12 @@
+{
+  "name": "nthu-doc",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  },
+  "devDependencies": {
+    "docz": "^0.12.9"
+  }
+}
