@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "docz:dev": "docz dev",
-    "docz:build": "docz build"
+    "dev": "docz dev",
+    "build": "docz build"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "styled-components": "^4.0.3"
   },
   "devDependencies": {
     "docz": "^0.12.9"
