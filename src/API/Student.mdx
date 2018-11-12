@@ -5,22 +5,57 @@ menu: API
 
 # Student
 
-參考資料
+學生資料
 
-- https://medium.com/studioarmix/learn-restful-api-design-ideals-c5ec915a430f
+`GET /student/:id`
 
-- https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9
+```javascript
+{
+  data: [
+    { 校區 : 本區 / 南大 },
+    { ... },
+    { ... },
+  ]
+}
+```
+
+學生目前修的所有課程
+
+`GET /student/:id/courses`
+
+```javascript
+{
+  data: [
+    { ... },
+    { ... },
+  ]
+}
+```
 
 ---
 
-### GET
+學生選擇某項課程
 
-學生資料：student/:id
+`POST /student/:id/course/:id`
 
-學生目前修的所有課程：student/:id/courses
+```javascript
+{
+  data: [
+    { ... },
+    { ... },
+  ]
+}
+```
 
----
+學生刪除某項課程
 
-### POST
+`DELETE /student/:id/course/:id`
 
-學生 XXX：blablabla
+```javascript
+{
+  data: [
+    { ... },
+    { ... },
+  ]
+}
+```
