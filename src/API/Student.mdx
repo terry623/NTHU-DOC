@@ -7,7 +7,7 @@ menu: API
 
 學生資料
 
-`GET /student/:id`
+`GET /students/:id`
 
 ```javascript
 {
@@ -21,7 +21,7 @@ menu: API
 
 學生目前修的所有課程
 
-`GET /student/:id/courses`
+`GET /students/:id/courses`
 
 ```javascript
 {
@@ -34,9 +34,9 @@ menu: API
 
 ---
 
-學生選擇某項課程 ( 看是否要回傳此課程資訊然後更新 cache，或者直接全部重抓 )
+學生選修某項課程 ( 看是否要回傳此課程資訊然後更新 cache，或者直接全部重抓 )
 
-`POST /student/:id/course/:id`
+`POST /students/:id/courses/:id`
 
 ```javascript
 {
@@ -47,9 +47,9 @@ menu: API
 }
 ```
 
-學生刪除某項課程 ( 看是否要回傳此課程資訊然後更新 cache，或者直接全部重抓 )
+學生退選某項課程 ( 看是否要回傳此課程資訊然後更新 cache，或者直接全部重抓 )
 
-`DELETE /student/:id/course/:id`
+`DELETE /students/:id/courses/:id`
 
 ```javascript
 {
